@@ -7,20 +7,63 @@
     height: inherit;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
     align-items: center;
+    justify-content: space-between;
 
+@media (min-width: 768px){
+    body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .login {
+        background-image: none;
+        background-color: $blanco;
+        width: 100px;
+        height: 10px;
+    }
 }
 .login__figure {
-    height: 30%;
     display: flex;
     align-items: center;
+    height: 40%;
 }
 .login__figure i {
+    margin-top: 2rem;
     font-size: 6rem;
     color: $blanco;
 }
+.login__texto {
+    text-align: center;
+    height: 20%;
+}
 .login__form {
+    height: 52%;
     display: flex;
     flex-direction: column;
+    justify-content: center;
+    width: 88%;
+    text-align: center;
+}
+.login__form--input {
+    text-align: center;
+    font-size: 1.6rem;
+    color: $blanco;
+    display: inline-block;
+    border: none;
+    border-bottom: 1px solid $blanco-transparente;
+    background-color: transparent;
+    padding: 1rem 3rem;
+    &::placeholder {
+        color: $blanco-transparente;
+        text-align: center;
+    }
+    &:focus {
+        outline: none;
+    }
+}
+.login__botones {
+    display: flex;
+    flex-direction: column;
+    margin: 1rem 0;
 }
