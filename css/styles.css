@@ -51,6 +51,8 @@ a {
   color: #ffffffcb;
   text-decoration: none;
   font-size: 1.8rem;
+  -webkit-transition: 450ms;
+  transition: 450ms;
 }
 
 a:hover {
@@ -68,15 +70,25 @@ a:hover {
   background-color: #0073ba;
   color: #fff;
   cursor: pointer;
+  -webkit-transition: 450ms;
+  transition: 450ms;
 }
 
 .btn:focus {
   outline: none;
 }
 
+.btn:hover {
+  background-color: #0073ba70;
+}
+
 .btn--verde {
   margin-top: .8rem;
   background-color: #8bb600;
+}
+
+.btn--verde:hover {
+  background-color: #8bb60070;
 }
 
 /* COMPONENETES */
@@ -103,6 +115,7 @@ a:hover {
 
 @media (min-width: 768px) {
   body {
+    background-image: url(/assets/img/parque.jpg);
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -115,9 +128,10 @@ a:hover {
   }
   .login {
     background-image: none;
-    background-color: #fff;
-    width: 100px;
-    height: 10px;
+    background-color: rgba(0, 0, 0, 0.32);
+  }
+  .login__texto {
+    width: 88%;
   }
 }
 
