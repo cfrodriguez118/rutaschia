@@ -1,0 +1,26 @@
+
+.login {
+    background-image: url(/assets/img/parque_login.jpg);
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: inherit;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+
+}
+.login__figure {
+    height: 30%;
+    display: flex;
+    align-items: center;
+}
+.login__figure i {
+    font-size: 6rem;
+    color: $blanco;
+}
+.login__form {
+    display: flex;
+    flex-direction: column;
+}
