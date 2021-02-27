@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&family=Source+Sans+Pro:wght@300;400;600;700&display=swap" rel="stylesheet"> 
+    <link rel="stylesheet" href="css/styles.css">
+    <title>Crear cuenta - Rutas Chia</title>
+    <script src="https://kit.fontawesome.com/da8512e6e7.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <main class="signup login">
+        <form class="signup__form login__form">
+            <h1 class="signup__titulo">Crear cuenta</h1>
+            <h2 class="signup__subtitulo">Datos del acudiente</h2>
+            <input class="input" type="text" name="name" autocomplete="given-name" placeholder="Nombres" required>
+            <input class="input" type="text" autocomplete="family-name" placeholder="Apellidos" required>
+            <input class="input" type="number" autocomplete="cedula" placeholder="Cedula" required>
+            <input class="input" type="email" autocomplete="email" placeholder="Correo Electronico" required>
+            <label>
+                <span>Fecha de nacimiento</span>
+                <input class="input-date input"  type="date" required>
+            </label>
+            <select class="signup__form--select" required>
+                <option class="select-option" selected disabled> -- Genero --</option>
+                <option class="select-option" value="men">Masculino</option>
+                <option class="select-option" value="fem">Femenino</option>
+            </select>
+            <input class="input" type="password" placeholder="Contraseña" required>
+            <input class="input" type="password" placeholder="Repetir Contraseña" required> 
+            <button class="btn">Registrarse</button>
+        </form>
+        <a href="login.html" class="signup__a">¿Ya tienes un usuario?</a>
+    </main>
+    <script src="js/main.js"></script>
+</body>
+</html>

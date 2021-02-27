@@ -1,5 +1,7 @@
 /* VARIABLES */
 @import "scss/lib/variables";
+/* UTILIDADES */
+@import "scss/components/utilities";
 /* ELEMENTOS BASE */
 @import "scss/base/titulos";
 @import "scss/base/texto";
@@ -7,5 +9,3 @@
 @import "scss/base/botones";
 /* COMPONENETES */
 @import "scss/components/grids";
-/* UTILIDADES */
-@import "scss/components/utilities";

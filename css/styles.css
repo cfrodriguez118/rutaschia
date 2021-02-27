@@ -1,6 +1,40 @@
 /* VARIABLES */
 /* Fuentes */
 /* Colores */
+/* UTILIDADES */
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  background-image: url(/assets/img/parque_login.jpg);
+  background-attachment: fixed;
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: inherit;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
 /* ELEMENTOS BASE */
 h1, h2, h3, h4, h5, h6 {
   font-family: "Source Sans Pro", sans-serif;
@@ -41,6 +75,15 @@ h6 {
   color: #ffffffcb;
 }
 
+.signup__titulo {
+  color: #fff;
+  padding-top: 2rem;
+}
+
+.signup__subtitulo {
+  color: #ffffffcb;
+}
+
 p {
   font-family: "Open Sans", sans-serif;
 }
@@ -60,8 +103,18 @@ a:hover {
   cursor: pointer;
 }
 
+.signup__a {
+  margin: 2.8rem 0 2.6rem 0;
+  padding-bottom: 2rem;
+}
+
+a.btn.btn--verde:hover {
+  text-decoration: none;
+}
+
 .btn {
   display: inline-block;
+  text-decoration: none;
   border: none;
   font-family: "Open Sans", sans-serif;
   font-size: 1.8rem;
@@ -93,11 +146,7 @@ a:hover {
 
 /* COMPONENETES */
 .login {
-  background-image: url(/assets/img/parque_login.jpg);
-  background-position: center center;
-  background-size: cover;
-  background-repeat: no-repeat;
-  height: inherit;
+  height: 100vh;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -172,7 +221,7 @@ a:hover {
   text-align: center;
 }
 
-.login__form--input {
+.input {
   text-align: center;
   font-size: 1.6rem;
   color: #fff;
@@ -183,27 +232,27 @@ a:hover {
   padding: 1rem 3rem;
 }
 
-.login__form--input::-webkit-input-placeholder {
+.input::-webkit-input-placeholder {
   color: #ffffffcb;
   text-align: center;
 }
 
-.login__form--input:-ms-input-placeholder {
+.input:-ms-input-placeholder {
   color: #ffffffcb;
   text-align: center;
 }
 
-.login__form--input::-ms-input-placeholder {
+.input::-ms-input-placeholder {
   color: #ffffffcb;
   text-align: center;
 }
 
-.login__form--input::placeholder {
+.input::placeholder {
   color: #ffffffcb;
   text-align: center;
 }
 
-.login__form--input:focus {
+.input:focus {
   outline: none;
 }
 
@@ -218,21 +267,98 @@ a:hover {
   margin: 1rem 0;
 }
 
-/* UTILIDADES */
-* {
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-}
-
-html {
-  font-size: 62.5%;
-}
-
-body {
-  font-size: 1.8rem;
+.signup {
   width: 100%;
-  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+}
+
+.signup__form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  height: inherit;
+}
+
+.signup__form--select {
+  font-family: "Open Sans", sans-serif;
+  text-align-last: center;
+  text-align: center;
+  font-size: 1.6rem;
+  color: #fff;
+  display: inline-block;
+  border: none;
+  border-bottom: 1px solid #ffffffcb;
+  background-color: transparent;
+  padding: 1rem 3rem;
+}
+
+.signup__form--select::-webkit-input-placeholder {
+  color: #ffffffcb;
+  text-align: center;
+}
+
+.signup__form--select:-ms-input-placeholder {
+  color: #ffffffcb;
+  text-align: center;
+}
+
+.signup__form--select::-ms-input-placeholder {
+  color: #ffffffcb;
+  text-align: center;
+}
+
+.signup__form--select::placeholder {
+  color: #ffffffcb;
+  text-align: center;
+}
+
+.signup__form--select:focus {
+  outline: none;
+}
+
+.select-option {
+  text-align: center;
+  color: #000;
+}
+
+input.input-date.input {
+  margin: 0;
+  width: 100%;
+  text-align: center;
+}
+
+input[type=date]::-webkit-calendar-picker-indicator {
+  -webkit-filter: invert(1);
+          filter: invert(1);
+  position: absolute;
+}
+
+.signup__form input, .signup__form select, .signup__form button {
+  margin-top: 1rem;
+}
+
+label {
+  margin-top: 1.6rem;
+  font-size: 1.6rem;
+  font-family: "Open Sans", sans-serif;
+  color: #ffffffcb;
+}
+
+@media (min-width: 768px) {
+  main.signup.login {
+    max-width: 420px;
+  }
 }
 /*# sourceMappingURL=styles.css.map */

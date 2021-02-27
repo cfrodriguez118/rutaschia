@@ -1,10 +1,5 @@
-
 .login {
-    background-image: url(/assets/img/parque_login.jpg);
-    background-position: center center;
-    background-size: cover;
-    background-repeat: no-repeat;
-    height: inherit;
+    height: 100vh;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -47,7 +42,7 @@
     width: 88%;
     text-align: center;
 }
-.login__form--input {
+.input {
     text-align: center;
     font-size: 1.6rem;
     color: $blanco;
@@ -68,4 +63,61 @@
     display: flex;
     flex-direction: column;
     margin: 1rem 0;
+}
+.signup {
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+}
+.signup__form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: inherit;
+}
+.signup__form--select {
+    font-family: $texto;
+    text-align-last: center;
+    text-align: center;
+    font-size: 1.6rem;
+    color: $blanco;
+    display: inline-block;
+    border: none;
+    border-bottom: 1px solid $blanco-transparente;
+    background-color: transparent;
+    padding: 1rem 3rem;
+    &::placeholder {
+        color: $blanco-transparente;
+        text-align: center;
+    }
+    &:focus {
+        outline: none;
+    }
+}
+.select-option {
+    text-align: center;
+    color: $negro;
+}
+input.input-date.input {
+    margin: 0;
+    width: 100%;
+    text-align: center;
+}
+input[type=date]::-webkit-calendar-picker-indicator {
+    filter: invert(1);
+    position: absolute;
+}
+.signup__form input, .signup__form select, .signup__form button {
+    margin-top: 1rem;
+}
+label {
+    margin-top: 1.6rem;
+    font-size: 1.6rem;
+    font-family: $texto;
+    color: $blanco-transparente;
+}
+@media (min-width: 768px){
+    main.signup.login {
+        max-width: 420px;
+    }
 }
